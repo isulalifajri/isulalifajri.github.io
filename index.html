@@ -14,30 +14,27 @@
         <link href="img/heningsunyi.jpg" rel="apple-touch-icon">
 
         <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+         -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 
         <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+        <link href = "https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css" rel = "stylesheet">
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         
-<!--
-
-TemplateMo 578 First Portfolio
-
-https://templatemo.com/tm-578-first-portfolio
-
--->
     </head>
     
-    <body>
+    <body class="bg-2">
 
         <section class="preloader">
             <div class="spinner">
@@ -54,11 +51,8 @@ https://templatemo.com/tm-578-first-portfolio
 
                 <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Isul Alifajri</a>
 
-                <div class="d-flex align-items-center d-lg-none">
-                    <a class="" href="https://wa.me/6282337750357"><i class="custom-btn btn bi-telephone-plus me-3"></i></a>
-                    <a class="custom-btn btn" href="#section_5">
-                        082337750357
-                    </a>
+                <div class="d-flex align-items-center d-lg-none" onclick="redirEmail()" style="cursor:pointer;">
+                    <i class="navbar-icon bi-envelope me-3" id="tooltip" title="Send Email"></i>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -72,7 +66,7 @@ https://templatemo.com/tm-578-first-portfolio
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Projects/Services</a>
+                            <a class="nav-link click-scroll" href="#section_3">Project</a>
                         </li>
 
                         <li class="nav-item">
@@ -85,10 +79,12 @@ https://templatemo.com/tm-578-first-portfolio
                     </ul>
 
                     <div class="d-lg-flex align-items-center d-none ms-auto">
-                        <i class="navbar-icon bi-telephone-plus me-3"></i>
-                        <a class="custom-btn btn" href="#section_5">
-                            082337750357
+                        <a class=""  href="mailto:isulalifajri@gmail.com" id="tooltip1" data title="Send Email">
+                                <i class="custom-btn btn bi-envelope me-3 cuyy"></i>
                         </a>
+                        <div class="d-flex align-items-center d-lg-none">
+                            <i class="navbar-icon bi-envelope me-3"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -106,19 +102,21 @@ https://templatemo.com/tm-578-first-portfolio
                                 <div class="hero-title-wrap d-flex align-items-center mb-4">
                                     <img src="img/foto.jpeg" class="avatar-image avatar-image-large img-fluid" alt="">
 
-                                    <h1 class="hero-title ms-3 mb-0">Hello!</h1>
+                                    <h1 class="hero-title ms-3 mb-0 cuyss">Hello!</h1>
                                 </div>
 
-                                <h2 class="mb-4">Perkenalkan Nama Saya Isul Alifajri
-                                </h2>
-                                <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">OK</a></p>
+                                <h2 class="mb-4 text-2">Perkenalkan Nama Saya Isul Alifajri</h2>
+                                <p class="mb-4">
+                                    <a class="custom-btn btn custom-link seeu" href="#section_2" style="visibility: hidden;">Lihat Selengkapnya..</a>
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-5 col-12 position-relative">
                             <div class="hero-image-wrap"></div>
-                            <img src="img/gambar.png" class="hero-image img-fluid" alt="">
-                            <!-- <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" class="hero-image img-fluid" alt=""> -->
+                            <div class="image-hero">
+                                <img src="img/developer.webp" class="hero-image img-fluid cuys" style="min-width: 0 !important;" alt="">
+                            </div>
                         </div>
 
                     </div>
@@ -128,95 +126,32 @@ https://templatemo.com/tm-578-first-portfolio
             </section>
 
 
-            <section class="about section-padding" id="section_2">
+            <section class="about section-padding bg-2" id="section_2">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-12">
-                            <img src="img/img1.jpg" class="about-image img-fluid" alt="">
+                        <div class="col-lg-6 col-12 js-scroll slide-left buble" style="cursor:pointer;":c>
+                            <img src="img/webdev.jpg" class="about-image img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-6 col-12 mt-5 mt-lg-0">
                             <div class="about-thumb">
 
-                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
+                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4 js-scroll fade-in-top">
                                     <h2 class="text-white me-4 mb-0">My Story</h2>
 
-                                    <img src="img/foto1.jpg" class="avatar-image img-fluid" alt="">
+                                    <img src="img/heningsunyi.jpg" class="avatar-image img-fluid" alt="">
                                 </div>
 
-                                <h3 class="pt-2 mb-3">Sedikit Tentang Saya</h3>
+                                <h3 class="card-1 pt-2 mb-3 js-scroll slide-right">Sedikit Tentang Saya</h3>
 
-                                <p>Haloo! <b>Saya Isul Alifajri.</b> Lulusan Teknik Informatika di Universitas 17 Agustus 1945 Surabaya. Menguasai Microsoft Office Word, Excel, Acces, dan Power Point. Bisa Membuat Website Menggunakan Bahasa Pemrograman PHP, CSS, CI3, dan Bootstrap 4/5. </p>
-
-                                <p>Suka jalan-jalan ke tempat yang sepi tapi tenang, seperti ke daerah bebukitan sambil melihat indahnya pemandangan lembah dan luasnya alam.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="featured section-padding">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <div class="profile-thumb">
-                                <div class="profile-title">
-                                    <h4 class="mb-0">Informasi</h4>
-                                </div>
-
-                                <div class="profile-body">
-                                    <p>
-                                        <span class="profile-small-title">Nama</span> 
-                                        <span>Isul Alifajri</span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Tgl Lahir</span> 
-                                        <span>11 Juni 1998</span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Phone</span> 
-                                         <span><a href="tel: 305-240-9671">08233750357</a></span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Email</span> 
-                                        <span><a href="mailto:isulalifajri@gmail.com">isulalifajri@gmail.com</a></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <div class="about-thumb">
-                                <div class="row">
-                                    <div class="col-lg-6 col-6 featured-border-bottom py-2">
-                                        <strong class="featured-numbers">1</strong>
-
-                                        <p class="featured-text">Tahun Pengalaman</p>
-                                    </div>
-
-                                    <div class="col-lg-6 col-6 featured-border-start featured-border-bottom ps-5 py-2">
-                                        <strong class="featured-numbers">24</strong>
-
-                                        <p class="featured-text">Umur</p>
-                                    </div>
-
-                                    <div class="col-lg-6 col-6 pt-4">
-                                        <strong class="featured-numbers">1</strong>
-
-                                        <p class="featured-text">Project Selesai</p>
-                                    </div>
-
-                                    <div class="col-lg-6 col-6 featured-border-start ps-5 pt-4">
-                                        <strong class="featured-numbers">0</strong>
-
-                                        <p class="featured-text">Menikah</p>
-                                    </div>
+                                <div class="card-2 js-scroll fade-in-bottom">
+                                    <p>Haloo! <b>Saya Isul Alifajri.</b> Lulusan Teknik Informatika di Universitas 17 Agustus 1945 Surabaya. 
+                                        Menguasai Microsoft Office Word, Excel, Acces, dan Power Point. 
+                                        Bisa Membuat Website Menggunakan Bahasa Pemrograman PHP, CSS, Javascipt, dan Jquery. Beberapa framework yang saya kuasai
+                                        yaitu: Codeigniter 3, Laravel 8 dan Bootstrap 4/5. </p>
+    
+                                    <p>Suka jalan-jalan ke tempat yang sepi tapi tenang, seperti ke daerah bebukitan sambil melihat indahnya pemandangan lembah dan luasnya alam.</p>
                                 </div>
                             </div>
                         </div>
@@ -225,140 +160,61 @@ https://templatemo.com/tm-578-first-portfolio
                 </div>
             </section>
 
-
-            <!-- <section class="clients section-padding">
+            <section class="clients section-padding card-3">
                 <div class="container">
                     <div class="row align-items-center">
 
                         <div class="col-lg-12 col-12">
-                            <h3 class="text-center mb-5">Perusahaan tempat saya pernah magang</h3>
+                            <h3 class="text-center mb-5 js-scroll fade-in-zoom">Perusahaan tempat saya pernah magang dan bekerja</h3>
                         </div>
 
-                        <div class="col-lg-2 col-4 ms-auto clients-item-height">
-                            <img src="img/logo-bank-jatim.jpg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/clients/guitar-center.svg" class="clients-image img-fluid" alt="">
-                        </div> -->
-
-                        <!-- <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/clients/tokico.svg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/clients/shopify.svg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 me-auto clients-item-height">
-                            <img src="images/clients/profil-rejser.svg" class="clients-image img-fluid" alt="">
+                        <div class="col-lg-6 col-6 m-auto auwoo">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide"><img src="image-workplace/logo-bank-jatim.jpg" class="clients-image image1 img-fluid text-center" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="image-workplace/fruitylogic.png" class="clients-image image1 img-fluid text-center" alt=""></a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-            </section> -->
+            </section>
 
 
-            <section class="services section-padding" id="section_3">
+            <section class="services section-padding bg-2" id="section_3">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-10 col-12 mx-auto">
-                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5 js-scroll fade-in">
                                 <img src="images/handshake-man-woman-after-signing-business-contract-closeup.jpg" class="avatar-image img-fluid" alt="">
 
-                                <h2 class="text-white ms-4 mb-0">Projects</h2>
+                                <h2 class="text-white ms-4 mb-0">Project</h2>
                             </div>
 
-                            <div class="row pt-lg-5">
+                            <div class="row pt-lg-5 js-scroll slide-left">
                                 <div class="col-lg-6 col-12">
                                     <div class="services-thumb">
                                         <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Websites</h3>
+                                            <h3 class="mb-0">Project 1</h3>
 
                                             <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$0</p>
+                                                <p class="services-price-text mb-0 code"><img src="icons-programs/codeigniter.png" class="hover-code" alt=""></p>
                                                 <div class="services-price-overlay"></div>
                                             </div>
                                         </div>
 
-                                        <p>Pernah membuat Website Untuk Project Tugas Akhir Kuliah. 
-                                        </br>Link Website : <a href="https://sawahsumur.com/" style="color:green">simdesa</a></p>
-                                        <p>Bahasa Pemrogaraman yang digunakan : <b>PHP, CSS, Javascript</b></br>
-                                        Framework yang digunakan : <b>Codeigniter 3 dan Bootstrap </b></br>
-			                Keamanan: Enkripsi Database dengan AES-256 dan OTP saat proses Aktivasi </br>
-			                Pengujian : SQL Injection, Cross Site Scripting </p>
+                                        <p>Membuat Website Sistem Informasi Manajemen Desa. Untuk informasi Lebih lanjut tentang website ini silahkan klik <b>lihat selengkapnya.</b>
+                                        <!-- </br>Link Website : <a href="https://sawahsumur.com/" style="color:green">simdesa</a></p> -->
 
-                                        <a href="#" class="custom-btn custom-border-btn btn mt-3">lebih Banyak</a>
+                                        <a href="project/project-1.html" target="_blank" class="custom-btn custom-border-btn btn mt-3">lihat selengkapnya</a>
 
                                         <div class="services-icon-wrap d-flex justify-content-center align-items-center">
                                             <i class="services-icon bi-globe"></i>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- <div class="col-lg-6 col-12">
-                                    <div class="services-thumb services-thumb-up">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Branding</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$1,200</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>You can explore more CSS templates on TemplateMo website by browsing through different tags.</p>
-
-                                        <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            <i class="services-icon bi-lightbulb"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Ecommerce</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$3,600</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>If you need a customized ecommerce website for your business, feel free to discuss with me.</p>
-
-                                        <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            <i class="services-icon bi-phone"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb services-thumb-up">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">SEO</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$1,450</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>To list your website first on any search engine, we will work together. First Portfolio is one-page CSS Template for free download.</p>
-
-                                        <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            <i class="services-icon bi-google"></i>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -370,7 +226,7 @@ https://templatemo.com/tm-578-first-portfolio
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                        <div class="col-lg-8 col-md-8 col-12 ms-auto js-scroll fade-in">
                             <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
                                 <img src="images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt="">
 
@@ -379,36 +235,7 @@ https://templatemo.com/tm-578-first-portfolio
                         </div>
 
                         <div class="clearfix"></div>
-
-                        <!-- <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Branding</small>
-
-                                    <h3 class="projects-title">Zoik agency</h3>
-                                </div>
-
-                                <a href="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Photography</small>
-
-                                    <h3 class="projects-title">The Watch</h3>
-                                </div>
-
-                                <a href="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div> -->
-
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <div class="col-lg-4 col-md-6 col-12 js-scroll slide-left">
                             <div class="projects-thumb">
                                 <div class="projects-info">
                                     <small class="projects-tag">Website</small>
@@ -416,13 +243,13 @@ https://templatemo.com/tm-578-first-portfolio
                                     <p class="projects-title">Framework Used : Codeigniter 3 dan Bootstrap</p>
                                 </div>
 
-                                <a href="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="projects-image img-fluid" alt="">
+                                <a href="./img/develop-web.jpg" class="popup-image">
+                                    <img src="./img/develop-web.jpg" class="projects-image img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-12">
+						
+						 <div class="col-lg-4 col-md-6 col-12 js-scroll slide-right">
                             <div class="projects-thumb">
                                 <div class="projects-info">
                                     <small class="projects-tag">Teknisi Jaringan dan Sistem Komputer</small>
@@ -436,7 +263,7 @@ https://templatemo.com/tm-578-first-portfolio
                             </div>
                         </div>
 						
-						<div class="col-lg-4 col-md-6 col-12">
+						<div class="col-lg-4 col-md-6 col-12 js-scroll fade-in-bottom">
                             <div class="projects-thumb">
                                 <div class="projects-info">
                                     <small class="projects-tag">Microsoft Office</small>
@@ -458,7 +285,7 @@ https://templatemo.com/tm-578-first-portfolio
                     <div class="container">
                         <div class="row">
 
-                            <div class="col-lg-6 col-md-8 col-12">
+                            <div class="col-lg-6 col-md-8 col-12 js-scroll fade-in">
                                 <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
                                     <img src="images/aerial-view-man-using-computer-laptop-wooden-table.jpg" class="avatar-image img-fluid" alt="">
 
@@ -468,7 +295,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                             <div class="clearfix"></div>
 
-                            <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                            <div class="col-lg-3 col-md-6 col-12 pe-lg-0 js-scroll fade-in-top">
                                 <div class="contact-info contact-info-border-start d-flex flex-column">
                                     <strong class="site-footer-title d-block mb-3">Hobi</strong>
 
@@ -500,7 +327,7 @@ https://templatemo.com/tm-578-first-portfolio
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                            <div class="col-lg-3 col-md-6 col-12 ps-lg-0 js-scroll slide-right">
                                 <div class="contact-info d-flex flex-column">
                                     <strong class="site-footer-title d-block mb-3">Tentang</strong>
 
@@ -519,100 +346,29 @@ https://templatemo.com/tm-578-first-portfolio
                                     <strong class="site-footer-title d-block mt-4 mb-3">Hubungi</strong>
 
                                     <p class="mb-0">
-                                        <a href="tel: 082337750357">
-                                            082337750357
+                                        <a href="https://wa.me/6282337750357?text=hello...">
+                                            WhatsApp
                                         </a>
                                     </p>
                                 </div>
                             </div>
 
-                            <!-- <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                                <form action="#" method="get" class="custom-form contact-form" role="form">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="form-floating">
-                                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
-                                                
-                                                <label for="floatingInput">Name</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 col-12"> 
-                                            <div class="form-floating">
-                                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-                                                
-                                                <label for="floatingInput">Email address</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline">
-                                                <input name="website" type="checkbox" class="form-check-input" id="inlineCheckbox1" value="1">
-
-                                                <label class="form-check-label" for="inlineCheckbox1">
-                                                    <i class="bi-globe form-check-icon"></i>
-                                                    <span class="form-check-label-text">Websites</span>
-                                                </label>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline">
-                                                <input name="branding" type="checkbox" class="form-check-input" id="inlineCheckbox2" value="1">
-
-                                                <label class="form-check-label" for="inlineCheckbox2">
-                                                    <i class="bi-lightbulb form-check-icon"></i>
-                                                    <span class="form-check-label-text">Branding</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline">
-                                                <input name="ecommerce" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="1">
-
-                                                <label class="form-check-label" for="inlineCheckbox3">
-                                                    <i class="bi-phone form-check-icon"></i>
-                                                    <span class="form-check-label-text">Ecommerce</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline me-0">
-                                                <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4" value="1">
-
-                                                <label class="form-check-label" for="inlineCheckbox4">
-                                                    <i class="bi-google form-check-icon"></i>
-                                                    <span class="form-check-label-text">SEO</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-12 col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
-                                                
-                                                <label for="floatingTextarea">Tell me about the project</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-12 ms-auto">
-                                            <button type="submit" class="form-control">Send</button>
-                                        </div>
-
-                                    </div>
-                                </form>
-                            </div> -->
+                          
 
                         </div>
                     </div>
                 </div>
             </section>
 
+            <a href="https://wa.me/6282337750357?text=hello...">
+                <div class="chat-to-wa">
+                    <i class="bi-whatsapp cuyyy"></i>
+                </div>
+            </a>
+
         </main>
 
-        <footer class="site-footer">
+        <footer class="site-footer card-1">
             <div class="container">
                 <div class="row">
 
@@ -632,12 +388,140 @@ https://templatemo.com/tm-578-first-portfolio
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            function redirEmail(){
+                window.location.href = "mailto:isulalifajri@gmail.com"
+            }
+        </script>
 
+        <script>
+            $(function () {
+                $("#tooltip, #tooltip1").tooltip({
+                    tooltipClass: "tooltip-styling",
+                    position: { my: "left+5 center", at: "right center" }
+                });
+            });
+        </script>
+
+        <script>
+            const heading = document.querySelector('.cuyss');
+            const characters = heading.textContent.match(/[\w\W]/g);    //Get the texts and create an array.
+            heading.textContent = '';    //Empty the contents.
+
+            // Loop through each character and push it inside heading element as a new span element.
+            characters.forEach(char => {
+            const span = document.createElement('spann');
+            span.textContent = char;
+            heading.appendChild(span);
+            });
+
+
+            // Create charcter count variable and set timer with new function called setChar().
+            let char = 0;
+            let timer = setInterval(setChar, 100);
+
+            //Stop the interval when all characters are rendered else set character span class to fade.
+            function setChar(){
+            const spanChar = document.querySelectorAll('spann')[char];
+            spanChar.className = 'fadee';
+            char++;
+            char === characters.length && clearInterval(timer);
+            }
+        </script>  
+
+        <script>
+            const heading1 = document.querySelector('.text-2');
+            const characters1 = heading1.textContent.match(/[\w\W]/g);   //Get the texts and create an array.
+            heading1.textContent = '';    //Empty the contents.
+    
+            characters1.forEach(char => {
+            const span1 = document.createElement('spans');
+            span1.textContent = char;
+            heading1.appendChild(span1).innerText == ' ' ? '&nbsp;' : span1.innerText;
+            });
+            // Create charcter count variable and set timer with new function called setChar().
+            let char1 = 0;
+            let timer1 = setInterval(setChar, 100);
+
+           //Stop the interval when all characters are rendered else set character span class to fade.
+            function setChar(){
+            const spanChar1 = document.querySelectorAll('spans')[char1];
+            spanChar1.className = 'fadeee';
+            sParameter = document.getElementsByClassName('fadeee');
+            char1++;
+            char1 === characters1.length && clearInterval(timer1);
+            }
+        </script>
+
+        <script>
+            var sp = document.querySelector(".seeu");
+            setTimeout(function() {
+                sp.classList.add("sp1");
+            }, 1900);
+        </script>
+        
+        <script>
+            const scrollElements = document.querySelectorAll(".js-scroll");
+    
+            const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+    
+            return (
+                elementTop <=
+                (window.innerHeight || document.documentElement.clientHeight) / dividend
+            );
+            };
+    
+            const elementOutofView = (el) => {
+            const elementTop = el.getBoundingClientRect().top;
+    
+            return (
+                elementTop > (window.innerHeight || document.documentElement.clientHeight)
+            );
+            };
+    
+            const displayScrollElement = (element) => {
+            element.classList.add("scrolled");
+            };
+    
+            const hideScrollElement = (element) => {
+            element.classList.remove("scrolled");
+            };
+    
+            const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+                } else if (elementOutofView(el)) {
+                hideScrollElement(el)
+                }
+            })
+            }
+    
+            window.addEventListener("scroll", () => { 
+            handleScrollAnimation();
+            });
+          </script>     
+          <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>    
+            <script>
+                    swiper = new Swiper('.swiper', {
+                        loop:true,
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                        },
+                    });
+            </script>
     </body>
 </html>
