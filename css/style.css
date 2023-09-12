@@ -239,8 +239,11 @@ i.bi-whatsapp.cuyyy {
     box-shadow:rgb(166 177 187 / 8%) 0px 10.8px 10.8px 1.35px;
   }
 
+.code{
+  margin:0 5px;
+}
 .code img{
-    width:30px;
+    width:auto;
     height:30px;
 }
 .hover-code, .pro{
