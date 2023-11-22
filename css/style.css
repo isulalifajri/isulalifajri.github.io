@@ -351,3 +351,20 @@ i.bi-whatsapp.cuyyy {
         transform: scale(0.8);
     }
   }
+
+.new-skills {
+    background-color: rgb(39, 42, 48, .6);
+    transition: .3s ease-in transform;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.new-skills:hover {
+  box-shadow: inset 0 0 0 2px hsl(163.13deg 80% 39.22%);
+  background-color: hsl(220 10% 14%);
+  border-radius: 2px;
+  transform: translateY(-3px);
+}
+img.images-skill{
+  height: 99px;
+  object-fit: cover;
+}
