@@ -417,9 +417,11 @@ img.images-skill{
   }
 
 }
-@media screen and (max-width: 551px) {
+@media screen and (max-width: 554px) {
+  .text-animate{
+    height: 101px;
+  }
   .descript-web{
     font-size: 12px;
   }
-
 }
