@@ -418,7 +418,7 @@ img.images-skill{
 
 }
 @media screen and (max-width: 554px) {
-  .text-animate{
+  h2.text-animate{
     height: 101px;
   }
   .descript-web{
