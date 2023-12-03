@@ -365,6 +365,7 @@ i.bi-whatsapp.cuyyy {
   transform: translateY(-3px);
 }
 img.images-skill{
+  aspect-ratio: 9 / 9;
   height: 99px;
   object-fit: cover;
 }
